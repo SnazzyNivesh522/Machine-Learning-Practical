@@ -7,6 +7,7 @@ Welcome to my machine learning practicals repository! This repository is dedicat
 ### Overview
 In this experiment, I implemented a Perceptron algorithm for binary classification. The Perceptron is a fundamental building block in the field of machine learning, and this experiment serves as a starting point for understanding its functionality and applications.
 
+[Link to File 2](./Perceptron_BinaryClassifier/Perceptron_BinaryClassifier.md)
 ### Files
 - [Perceptron.ipynb](./Perceptron_BinaryClassifier/Perceptron_BinaryClassifier.ipynb): Jupyter Notebook containing the implementation of the Perceptron algorithm.
 - [Sklearn make_classification](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html): Sample dataset used for training and testing the Perceptron.
