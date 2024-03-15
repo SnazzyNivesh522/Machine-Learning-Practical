@@ -7,7 +7,6 @@ Welcome to my machine learning practicals repository! This repository is dedicat
 ### Overview
 In this experiment, I implemented a Perceptron algorithm for binary classification. The Perceptron is a fundamental building block in the field of machine learning, and this experiment serves as a starting point for understanding its functionality and applications.
 
-[Link to File 2](./Perceptron_BinaryClassifier/Perceptron_BinaryClassifier.md)
 ### Files
 - [Perceptron.ipynb](./Perceptron_BinaryClassifier/Perceptron_BinaryClassifier.ipynb): Jupyter Notebook containing the implementation of the Perceptron algorithm.
 - [Sklearn make_classification](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html): Sample dataset used for training and testing the Perceptron.
@@ -18,16 +17,40 @@ In this experiment, I implemented a Perceptron algorithm for binary classificati
 3. Run the [Perceptron.ipynb](./Perceptron_BinaryClassifier/Perceptron_BinaryClassifier.ipynb) script to train and test the Perceptron on the provided dataset.
 4. Experiment with different parameters and datasets to gain a deeper understanding of the Perceptron's behavior.
 
-## Experiment 2: [Experiment Name]
+## Experiment 2: Linear and Ridge Regression
 
 ### Overview
-[Provide a brief overview of the experiment, including its objectives and significance.]
+This experiment implements linear regression, a fundamental statistical method for modeling the relationship between a dependent variable (y) and one or more independent variables (X). It aims to find a linear function that best fits the data points, enabling prediction of the dependent variable based on the independent variables.
 
 ### Files
-- [List the files relevant to this experiment.]
+- [Linear_Regression.ipynb](./Regression/Linear_Regression.ipynb): Jupyter Notebook containing the implementation of the Linear Regression.
+- [Ridge_Regression.ipynb](./Regression/Ridge_Regression.ipynb): Jupyter Notebook containing the implementation of the Linear Regression.
+- [Sklearn make_regression](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_regression.html): Sample dataset used for training and testing Regression Model.
 
 ### Instructions
-[Provide step-by-step instructions for running the experiment.]
+1. Import make_regression dataset(x,y): 100 samples, 1 feature, No Bias term and noise with std dev of 5. 
+2. Range of x is [-5 5] and y is [15 -15].
+3. Split the data set into training (80%) and testing(20%) dataset.
+4. Display overall dataset in one scatter plot, training dataset and testing dataset on one scatter plot.
+5. Add bias to each instance of input training data set. (use np.c_) to train the model: y = wTx + b = w1x1 +w0x0; w = [w1] and x = [x1] are 1 x 1; b is bias term =w0 with x0=1 ; x_b = [1, x1]T; w_b = [w0, w1]T
+6. Obtain the linear regression co-efficients using close form solution formula and using training data set.
+7. Test the algorithm using testing dataset and obtain prediction.
+8. Find and display Root Mean Square Error (RMSE) for training as well as testing. Use the function mean_squared_error in sklearn.metrics for performance evaluation.
+9. Plot straight line equation using co-efficients obtained on same scatter plot showing the training and testing datasets.
+Verify the results with sklearn in-built function: LinearRegression().
+
+10. Repeat the same experiment as in part (a) with same dataset for Ridge Regression algorithm with hyper-parameter values of 0.1, 0.5, 1.0 and 1.5 (denoted by α or λ).
+11. Sklearn in-built function is Ridge()
+
+### Learning Objectives
+1. Understand the core concepts of regression.
+2. Implement linear regression from scratch using matrix operations.
+3. Evaluate model performance using MSE and regularization terms.
+4. Visualize the relationship between variables and the fitted model.
+Compare the custom implementation with a popular machine learning library (scikit-learn).
+
+
+
 
 ## Experiment [N]: [Experiment Name]
 
